@@ -1,0 +1,342 @@
+/* Estilos css para sitio web Poket */
+/* Estilos generales */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Jost', sans-serif;
+    font-size: 1.1em;
+}
+p{
+    line-height: 1.5em;
+}
+ul,ol,h1,h2,h3,p,figure{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 2.3em;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.4;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.boton{
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 18px 40px;
+}
+.boton.blanco{
+    background: white;
+    color: black;
+    transition: all 0.5s;
+}
+.boton.blanco:hover{
+    background: #f5a96e;
+    color: #fff;
+    transform: scale(1.2);
+    
+}
+.titulo{
+    color: #f5a96e;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.alinear-derecha{
+    text-align: right;
+}
+.naranja{
+    color: #f5a96e;
+}
+/* ----- estilos estructurales  ----- */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.anchoMaximo{
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.ancho70{
+    flex-basis: 70%;
+}
+.ancho60{
+    flex-basis: 60%;
+}
+.ancho100{
+    flex-basis: 100%;
+}
+.ancho50{
+    flex-basis: 50%;
+}
+.ancho40{
+    flex-basis: 40%;
+}
+.ancho30{
+    flex-basis: 30%;
+}
+
+/* fila 1 de header */
+.superiorNav{
+    background: #f5a96e;
+    color: white;
+}
+.superiorNav > div{
+    min-height: 60px;
+    align-items: center;
+}
+.superiorNav a{
+    color: white;
+}
+/* contacto */
+.superiorNav .contacto li:not(:last-child){
+    margin-right: 30px;
+}
+.superiorNav .contacto img{
+    position: relative;
+    top: 5px;
+    height: 25px;
+    margin-right: 3px;
+}
+.navegacionPrincipal .icono-menu{
+    display: none; 
+    height: 25px;
+    cursor: pointer;
+}
+/* redes sociales */
+.redes img{
+    height: 18px;
+}
+
+.superiorNav .redes li:not(:last-child){
+    margin-right: 15px;
+}
+/* Fila 2 Header */
+.navegacionPrincipal >div{
+    min-height: 70px;
+    align-items: center;
+
+}
+.navegacionPrincipal li:not(:last-child){
+    margin-right: 25px;
+}
+
+.navegacionPrincipal a{
+    color: #272727;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.iconoBusqueda{
+    height: 25px;
+    cursor: pointer;
+}
+.infoHeader{
+    background: url('../imagenes/fondo-header.jpg') 50% 50%/cover no-repeat,
+    #000;
+    color: #fff;
+
+}
+.infoHeader>div{
+    min-height: 70vh;
+    align-items: center;
+}
+.infoHeader h1{
+    width: 75%;
+    margin-bottom: 30px;
+    font-size: 4em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.infoHeader p{
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    font-weight: 500;
+    width: 80%;
+}
+.arquitectura-interiorismo .zonaNegra{
+    padding-top: 70px;
+    padding-bottom: 230px;
+    background: black;
+    color: white;
+}
+.caracteristicas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: -170px;
+}
+.cajaCaracteristicas{
+    background: white;
+    padding: 45px 30px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+}
+
+.cajaCaracteristicas h3{
+    margin: 25px 0;
+    font-size: 1.6em;
+}
+/* seccion nosotros */
+.nosotros{
+    margin: 60px 0;
+}
+
+.gridCasas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-content: start;
+}
+
+.gridCasas img{
+    max-width: 100%;
+}
+.contenidoNosotros{
+    padding-left: 40px;
+}
+.contenidoNosotros .flex{
+    flex-wrap: wrap;
+}
+.contenidoNosotros figure{
+    text-align: right;
+}
+.contenidoNosotros figure img{
+    max-width: 100%;
+}
+/* footer de seccion nosotros */
+.icono-llamada{
+    position: relative;
+    box-sizing: content-box;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    background: black;
+    margin-top: -8px;
+}
+.nosotros footer{
+    margin-top: 30px;
+}
+.llamada{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 30px;
+    margin-top: 40px;
+    
+}
+.nosotros ol{
+    padding-left: 20px;
+    line-height: 1.7em;
+}
+.llamanos{
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.tel-llamanos{
+    font-size: 2.0em;
+    font-weight: 700;
+}
+/* footer principal */
+.footerPrincipal, .footerPrincipal a{
+    color: white;
+}
+.footerPrincipal a:hover{
+    color: #f5a96e;
+}
+.footerPrincipalSuperior{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../imagenes/fondo-footer.jpg') center center/cover no-repeat;
+}
+.gridFooterSuperior{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+.redesFooter {
+    margin-top: 30px;
+    justify-content: start;
+}
+.redesFooter li:not(:last-child){
+    margin-right: 15px;
+}
+.redesFooter img{
+    box-sizing: content-box;
+    padding: 4px;
+    height: 25px;
+    background: black;
+}
+
+.footerPrincipalSuperior h2{
+    font-size: 1.5em;
+    text-transform: none;
+    margin-bottom: 20px;
+}
+.listaServicios{
+    line-height: 1.6em;
+}
+.footerPrincipalSuperior address p{
+    margin-bottom: 10px;
+    font-style: normal;
+}
+.img-logo{
+    margin-bottom: 20px;
+}
+.footerPrincipalSuperior address img{
+    height: 20px;
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+}
+.footerPrincipalSuperior form{
+    margin-top: 30px;
+}
+.form-email{
+    display: inline-block;
+    background: transparent;
+    width: 65%;
+    height: 60px;
+    padding: 0 25px;
+    border: 1px solid #827d7c;
+    color: white;
+}
+.footerPrincipalSuperior ::placeholder{
+    color: #c8c8c8;
+}
+.form-email:focus{
+    outline: none;
+}
+.form-enviar{
+  
+    border:1px solid #827d7c;
+    width: 30%;
+    height: 60px;
+    cursor: pointer;
+}
+.form-enviar:hover{
+    background: #f5a96e;
+    color: white;
+    border-color: #f5a96e;
+}
+.footerPrincipalInferior{
+    padding: 30px 0;
+    background: black;
+}
+.copyright small{
+    font-size: 1em;
+}
+.menuFooter li:not(:last-child){
+    margin-right: 20px;
+}

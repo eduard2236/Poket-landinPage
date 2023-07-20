@@ -1,0 +1,179 @@
+/*-------------- Media Queries de poket ------------*/
+
+/* point break 1050*/
+@media screen and (max-width:1050px ) {
+    /* estructura general */
+
+    .titulo{
+        font-size: 1.3em;
+    }
+    h2{
+        font-size: 1.9em;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    /* cabecera principal */
+    .infoHeader>div{
+        min-height: 50vh;
+    }
+    .infoHeader h1{
+        font-size: 2.8em;
+    }
+    .infoHeader p{
+        font-size: 1.2em;
+    }
+    /* menu de navegacion pantalla 1050px */
+    .navegacionPrincipal ul{
+        display: none;
+    }
+    .navegacionPrincipal .icono-menu{
+        display: inline-block; 
+    }
+    /* zona Negra */
+    .zonaNegra figure img{
+        max-width: 100%;
+    }
+    /* zona caracteristicas */
+   
+    .caracteristicas{
+        grid-template-columns: 1fr 1fr;
+    }
+    /* zona nosotros */
+   
+    .gridCasas, .contenidoNosotros{
+        flex-basis: 100%;
+    }
+    .nosotros ol, .contenidoNosotros figure{
+        flex-basis: 100%;
+        margin-top: 30px;
+    }
+    .contenidoNosotros figure{
+        text-align: center;
+    }
+    .contenidoNosotros{
+        padding: 0;
+        margin-top: 30px;
+    }
+    .llamada{
+        display: block;
+        text-align: center;
+    }
+    .gridFooterSuperior{
+        grid-template-columns: auto auto;
+        gap: 15px 0;
+    }
+    .logo-redes{
+        grid-column: 1/3;
+    }
+
+}/* fin media */
+
+/* point break 900px */
+@media screen and (max-width:900px) {
+    .superiorNav{
+        display: none;
+    }
+    .infoHeader {
+        background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ), url('../imagenes/fondo-header.jpg') 50% 50%/cover no-repeat;
+    }
+    .infoHeader div{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .infoHeader h1{
+        width: 100%;
+        font-size: 2.2em;
+    }
+    .infoHeader p{
+        width: 100%;
+    }
+    /* zona Negra */
+    .zonaNegra .ancho70{
+        padding-right: 20px;
+    }
+}/* fin media 900px */
+
+/* point break 750px */
+@media screen and (max-width:750px){
+    /* estructura general */
+    .titulo{
+        font-size: 1em;
+     }
+
+     h2{
+        font-size: 1.6em;
+     }
+
+    /* zona negra */
+
+    .arquitectura-interiorismo .zonaNegra{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .zonaNegra .ancho70,.zonaNegra .ancho30{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .zonaNegra .ancho70{
+        margin-bottom: 30px;
+    }
+    /* zona caracteristicas */
+    .caracteristicas{
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+    /* zona footer superior */
+    .gridFooterSuperior{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px 0;
+    }
+   
+    .logo-redes{
+        grid-column: auto;
+    }
+    .copyright, .menuFooter{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .copyright{
+        order: 2;
+        margin-top: 10pxs;
+    }
+    .redesFooter{
+        justify-content: center;
+    }
+    .menuFooter{
+        justify-content: center;
+    }
+   
+}/* fin media 750px */
+
+/* point break 500px */
+@media screen and (max-width:500px) {
+    /* estructura */
+    .anchoMaximo{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* zona caracteristicas */
+
+    .infoHeader h1{
+        font-size: 2.5em;
+    }
+    .cajaCaracteristicas{
+        padding: 25px 10px;
+    }
+    .form-email{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .form-enviar{
+        width: 100%;
+    }
+    .footerPrincipalSuperior ::placeholder{
+        text-align: center;
+    }
+}/* fin media */
